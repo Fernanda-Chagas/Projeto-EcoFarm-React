@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/estaticos/navbar/Navbar';
+import Footer from './components/estaticos/footer/Footer';
 import './App.css';
 
 function App() {
   return (
-   <>
-   <h1>hello World</h1>
-   </>
+  <Router>
+    <Navbar />
+    <Footer />
+  </Router>
   );
 }
 

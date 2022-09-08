@@ -1,0 +1,17 @@
+.container{
+    background-color: #013712;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxs{
+    padding: 20px;
+    align-content: center;
+}
+
+.boxs ul li{
+    list-style: none;
+}
+.boxs h2 {
+    color:  #FAF9F6;
+}

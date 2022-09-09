@@ -1,0 +1,26 @@
+.container-cadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: px solid black;
+    justify-content: center;
+
+
+}
+
+.cadastro-usuario {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 350px;
+    padding: 50px 50px;
+    margin: auto;
+}
+
+#img-bg {
+    background-image: url('https://images.pexels.com/photos/96715/pexels-photo-96715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    height: 100%;
+}

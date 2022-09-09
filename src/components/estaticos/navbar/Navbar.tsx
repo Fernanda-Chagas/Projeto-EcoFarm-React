@@ -1,48 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import { Box } from '@mui/material';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import LogoutIcon from '@mui/icons-material/Logout';
 import './Navbar.css'
 
 function Navbar() {
+
     return (
-        <>
-            <AppBar position="static">
-                <Toolbar variant="dense">
-                    <Box className='cursor'>
-                        <Typography variant="h5" color="inherit">
+        <nav  >
+            <main id='basics' >
+                <section className='menu-n'  >
+                    <article >
+                        <h2 >
                             EcoFarm
-                        </Typography>
-                    </Box>
+                        </h2>
+                    </article>
 
-                    <Box display="flex" justifyContent="start">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                Home
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                Sobre nós
-                            </Typography>
-                        </Box>
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                Login
-                            </Typography>
-                        </Box>
-                        <Link to='/login' className='text-decorator-none'>
-                            <Box mx={1} className='cursor'>
-                                <Typography variant="h6" color="inherit">
-                                    logout
-                                </Typography>
-                            </Box>
-                        </Link>
-                    </Box>
-
-                </Toolbar>
-            </AppBar>
-        </>
+                    <section>
+                        <article>
+                            <ul className='list-n'>
+                                <li><a href='#'>Home</a></li>
+                                <li><a href='#'>Produtos</a></li>
+                                <li><a href='#'>Sobre</a></li>
+                                <li><a href='#'><AddShoppingCartIcon /></a></li>
+                                <li> <Link to='/login' className='link'><LogoutIcon /></Link> </li>
+                            </ul>
+                        </article>
+                    </section>
+                    </section>
+            </main>
+        </nav>
     );
 }
 export default Navbar;

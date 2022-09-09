@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+#basics {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    background-color: #1E8449;
+    font-size: 16px;
+    color:  #E6B580;
+    width: 100%;
+}
+
+.menu-n{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 90%;
+    margin-right: 5px;
+}
+
+.list-n{
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.list-n li{
+    padding-left: 20px;
+    padding-top: 10px;
+   
+}
+
+.link {
+    color:#E6B580;
+
+}
+.list-n a:hover{
+    font-weight: bold;
+}
+
+.list-n a{
+    text-decoration: none;
+    color:#E6B580;
+}
+
+
+

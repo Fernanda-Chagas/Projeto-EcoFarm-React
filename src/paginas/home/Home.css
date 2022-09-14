@@ -1,5 +1,6 @@
 .imagem{
-    background-image: url(../../assets/img/farm.jpg);
+    background-color: #f7ffec
+    ;
     background-repeat: no-repeat; 
     width: 100%; 
     min-height: 100vh; 

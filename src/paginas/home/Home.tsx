@@ -11,16 +11,12 @@ function Home() {
         </Box>
         <Box className='texto1'>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id totam veniam velit possimus dolorum nemo? Labore cupiditate neque recusandae iusto. Nesciunt, nisi vitae. Aperiam facilis distinctio fugit quam corrupti laborum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis, ipsam aut aliquam recusandae id molestias repellendus quas autem! Placeat nostrum repudiandae a quia incidunt exercitationem amet eum quas laboriosam.
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Id totam veniam velit possimus dolorum nemo? Labore cupiditate neque recusandae iusto. 
-                Nesciunt, nisi vitae. Aperiam facilis distinctio fugit quam corrupti laborum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Maxime omnis, ipsam aut aliquam recusandae id molestias repellendus quas autem! 
-                Placeat nostrum repudiandae a quia incidunt exercitationem amet eum quas laboriosam.
+            A EcoFarm nasceu como uma Organização não-Governamental,
+buscando seguir dentre os objetivos da ONU, a ODS 2 (Fome zero e Agricultura sustentável). 
+Nosso ituito é oferecer alimentos de qualidade para todos, ligando pequenos agricultores que não ultilizam agrotóxicos,
+a restaurantes, mercados e até mesmo você pode comprar no nosso site. Por um preço justo e produtos frescos, nossa meta é 
+reverter os lucros do nosso mercado para ajudar ONGs que trabalham com pessoas em situações de vulnerabilidade, ajudando 
+assim a criar uma sociedade mais igualitária para todos, e também, segura.
             </p>
         </Box>
        </Grid>

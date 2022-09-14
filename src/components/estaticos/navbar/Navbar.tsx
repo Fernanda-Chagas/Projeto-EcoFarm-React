@@ -14,7 +14,7 @@ function Navbar() {
                 <section className='menu-n'  >
 
                     <div className='loguinho'></div>
-                    <section>
+                    <section className='shadow'>
                         <article>
                             <ul className='list-n'>
                                 <li><a href='#'>Home</a></li>

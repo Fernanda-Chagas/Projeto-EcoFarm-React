@@ -1,26 +1,16 @@
-.container-cadastro {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 80vh;
-    width: 30vw;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: px solid black;
-    justify-content: center;
-
-
+.img{
+    background-image: url('../../assets/img/EcoFarm\ \(2\).png');
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
-.cadastro-usuario {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 350px;
-    padding: 50px 50px;
-    margin: auto;
+.btnCancelar{
+    margin-right: 20px !important;
 }
 
-#img-bg {
-    background-image: url('https://images.pexels.com/photos/96715/pexels-photo-96715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    height: 100%;
+.fundo{
+    background-color: #F7FFEC;
 }

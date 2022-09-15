@@ -1,4 +1,4 @@
-.img{
+.img {
     background-image: url('../../assets/img/EcoFarm\ \(2\).png');
     background-repeat: no-repeat;
     width: 100vh;
@@ -7,10 +7,14 @@
     background-position: center;
 }
 
-.btnCancelar{
+.btnCancelar {
     margin-right: 20px !important;
 }
 
-.fundo{
+.fundo {
     background-color: #F7FFEC;
+}
+
+.tipoUsuario {
+    padding-top: 15px !important;
 }

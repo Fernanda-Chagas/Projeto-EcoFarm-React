@@ -6,6 +6,7 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
+import Produtos from './paginas/produtos/Produtos';
 
 function App() {
   return (
@@ -13,12 +14,11 @@ function App() {
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
         <Routes>
-
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<CadastroUsuario />} />
-
+          <Route path="/produtos" element={<Produtos />} />
         </Routes>
       </div>
       <Footer />

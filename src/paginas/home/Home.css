@@ -1,16 +1,72 @@
-.imagem{
-    background-color: #f7ffec
-    ;
-    background-repeat: no-repeat; 
-    width: 100%; 
-    min-height: 100vh; 
-    background-size: cover; 
-    background-position: center;
-
+.slider{
+    overflow: hidden;
+    margin: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    height: 300px;
 }
 
-.texto1{
-    display: block !important;
-    text-align: center !important;
-    width: 400px !important;
+.slider > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 800ms;
+    animation: carousel infinite 10s;
+}
+
+.slider > .slider-content > .slider-item{
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+    transform: translateX(-100%);
+}
+
+.slider > input:nth-child(3):checked ~ .slider-content{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+    transform: translateX(-300%);
+}
+
+.slider > input:nth-child(1){
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.slider > input:nth-child(2){
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.slider > input:nth-child(3){
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.slider > input:nth-child(4){
+    position: absolute;
+    left: 90px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+@keyframes carousel {
+    0%{transform: translateX(0%);}
+    25%{transform: translateX(-100%);}
+    75%{transform: translateX(-200%);}
+    100%{transform: translateX(-300%);}
 }

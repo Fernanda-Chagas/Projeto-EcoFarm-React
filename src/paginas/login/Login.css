@@ -2,8 +2,8 @@
     font-weight: bold;
 }
 
-imagem{
-    background-image: url(../../assets/img/imagem\ PI.jpg) ;
+.imagem{
+    background-image: url(../../assets/img/EcoFarm.png) ;
     background-repeat: no-repeat; 
     width: 100vh; 
     min-height: 100vh; 

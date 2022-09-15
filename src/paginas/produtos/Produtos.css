@@ -1,0 +1,24 @@
+#page_produtos {
+    width: 100%;
+    display: flex;
+    background-color: yellow;
+}
+
+#page_produtos > section:nth-child(1) {
+    flex: 1 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: red;
+}
+
+#page_produtos > section:nth-child(2) {
+    flex: 1 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: blue;
+}

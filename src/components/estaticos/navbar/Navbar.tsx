@@ -17,7 +17,7 @@ function Navbar() {
                     <section className='shadow'>
                         <article>
                             <ul className='list-n'>
-                                <li><a href='#'>Home</a></li>
+                                <li><a href='/home'>Home</a></li>
                                 <li><a href='#'>Produtos</a></li>
                                 <li><a href='#'>Sobre</a></li>
                                 <li><a href='#'>Seja um fornecedor</a></li>

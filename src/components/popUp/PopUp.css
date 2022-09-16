@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 body {
   align-items: center;
   background-color: #f2f2f2;
@@ -10,14 +9,12 @@ body {
   height: 100vh;
   margin: 0;
 }
-
 .person {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 280px;
 }
-
 .container {
   border-radius: 50%;
   height: 312px;
@@ -35,7 +32,6 @@ body {
   width: 700px;
   padding-left: 30px;
 }
-
 .teste3 {
   padding-top: 200px;
   display: flex;
@@ -66,7 +62,6 @@ body {
   transform-origin: 50%;
   top: -200px;
 }
-
 .circle {
   background-color: #fee7d3;
   border-radius: 50%;
@@ -104,25 +99,21 @@ body {
   top: 170px;
   width: 400px;
 }
-
 .img3 {
   left: 40px;
   top: 200px;
   width: 325px;
 }
-
 .img4 {
   left: 40px;
   top: 100px;
   width: 325px;
 }
-
 .divider {
   background-color: #ca6060;
   height: 1px;
   width: 160px;
 }
-
 .name {
   color: #404245;
   font-size: 36px;
@@ -130,7 +121,6 @@ body {
   margin-top: 16px;
   text-align: center;
 }
-
 .title {
   color: #fee7d3;
   font-family: arial;

@@ -7,13 +7,13 @@ import Footer from '../../components/estaticos/footer/Footer';
 
 
 function SobreNos() {
-  return (
-    <main className='page'>
-      <Texto />
-      
-      <PopUp />
-           
-      </main>
-        );
-    }
-        export default SobreNos;    
+      return (
+            <main className='page'>
+                  <Texto />
+
+                  <PopUp />
+
+            </main>
+      );
+}
+export default SobreNos;    

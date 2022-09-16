@@ -6,21 +6,21 @@
     flex-direction: column;
     background-color: white;
     font-size: 16px;
-    color:  #1E8449;
+    color: #1E8449;
     width: 100%;
     height: 75px;
-    box-shadow: 10px 5px 5px black;
-    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.04), 0 3px 6px rgba(0,0,0,0.08);
+    margin-bottom: 1px;    
 }
+
 .loguinho{
     background-image: url(EcoFarm.png);
     background-size: 100%;
     width: 110px;
     height: 110px !important;
-    padding-right: 20px;
-    
-    
+    padding-right: 20px;   
 }
+
 .menu-n{
     align-items: flex-end;
     display: flex;
@@ -32,8 +32,7 @@
     padding-right: 15px;
     width: 90%;
     height: 90px;
-    margin-right: 100px;
-    
+    margin-right: 100px;    
 }
 
 .list-n{
@@ -42,22 +41,19 @@
     cursor: pointer;
     padding-bottom: 15px;
     font-size: 20px;
-
 }
 
 .list-n li{
     padding-left: 20px;
     padding-top: 10px;
-    margin: 0 10px 0 10px;
-   
+    margin: 0 10px 0 10px;   
 }
-
 
 .link {
     color:#1E8449;
     font-size: large !important;
-
 }
+
 .list-n a:hover{
     font-weight: bold;
 }
@@ -66,8 +62,6 @@
     text-decoration: none;
     color:#1E8449;
 }
-.shadow {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.04), 0 3px 6px rgba(0,0,0,0.08);
-}
+
 
 

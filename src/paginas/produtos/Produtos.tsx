@@ -23,33 +23,38 @@ function Produtos() {
 
                     <section>
                         <div>
-                            
-                            <label htmlFor="fruta">
-                                Fruta
-                                <input type="radio" name="categoria" id='fruta' value="FRUTA" onChange={(e) => onRadioChangeCategory(e)} defaultChecked />
-                            </label>
-                            
-                            <label htmlFor="verdura">
-                                Verdura
-                                <input type="radio" name="categoria" id='verdura' value="VERDURA" onChange={(e) => onRadioChangeCategory(e)} />
-                            </label>
-                            
-                            <label htmlFor="legumes">
-                                Legumes
-                                <input type="radio" name="categoria" id='legumes' value="LEGUMES" onChange={(e) => onRadioChangeCategory(e)} />
-                            </label>
+                            <h2>Categoria</h2>
+                            <label htmlFor="todos" className='items'>
+                                    <input type="radio" name="categoria" id='todos' value="" onChange={(e) => onRadioChangeCategory(e)} defaultChecked />
+                                    Todos
+                                </label>
+
+                                <label htmlFor="frutas" className='items'>
+                                    <input type="radio" name="categoria" id='frutas' value="FRUTAS" onChange={(e) => onRadioChangeCategory(e)} />
+                                    Fruta
+                                </label>
+                                
+                                <label htmlFor="verduras" className='items'>
+                                    <input type="radio" name="categoria" id='verduras' value="VERDURAS" onChange={(e) => onRadioChangeCategory(e)} />
+                                    Verdura
+                                </label>
+                                
+                                <label htmlFor="legumes" className='items'>
+                                    <input type="radio" name="categoria" id='legumes' value="LEGUMES" onChange={(e) => onRadioChangeCategory(e)} />
+                                    Legumes
+                                </label>
                         </div>
 
                         <div>
-                            
-                            <label htmlFor="nome">
-                                Nome
+                            <h2>Categoria</h2>
+                            <label htmlFor="nome" className='items'>
                                 <input type="radio" name="ordem" id='nome' value="NomeProduto" onChange={(e) => onRadioChangeOrder(e)} defaultChecked />
+                                Nome
                             </label>
                             
-                            <label htmlFor="valor">
-                                Valor
+                            <label htmlFor="valor" className='items'>
                                 <input type="radio" name="ordem" id='valor' value="Valor" onChange={(e) => onRadioChangeOrder(e)} />
+                                Valor
                             </label>
                         </div>
                     </section>

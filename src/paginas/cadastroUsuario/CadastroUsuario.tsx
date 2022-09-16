@@ -82,7 +82,7 @@ function CadastroUsuario() {
                         </FormControl>
 
                         <Box marginTop={2} textAlign='center' className='bt'>
-                            <Link to='/home' className='text-decorator-none'>
+                            <Link to='/login' className='text-decorator-none'>
                                 <Button variant='contained' className='btnCancelar'>
                                     Cancelar
                                 </Button>

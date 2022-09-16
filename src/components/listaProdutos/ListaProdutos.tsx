@@ -27,12 +27,19 @@ function ListaProdutos(prop: any) {
         <>
             {produtos.map(produto => (
 
-
-                <article className='card'>
-                    <img src={produto.fotoProduto} alt="Foto" />
-                    <h3>Nome: {produto.nomeProduto}</h3>
-                    <h4>R$: {produto.valor}</h4>
-                </article>
+                produto.categoria === prop.categoria
+                    ?
+                    <article className='card'>
+                        <img src={produto.fotoProduto} alt={produto.nomeProduto} id='img-card' />
+                        <img src='https://i.imgur.com/KCYfXt3.jpeg' alt='Logo-EcoFarm' id='logo-card' />
+                        <h1>{produto.nomeProduto}</h1>
+                        <h5 className='mg-top'>{produto.categoria}</h5>
+                        <h5 className='mg-top'>Quantidade: {produto.quantidade} Kg</h5>
+                        <h2 className='mg-toph2'>R$: {produto.valor}<span>  Kg</span></h2>
+                        <button id='btn-comprar'>Comprar</button>
+                    </article>
+                    :
+                    ''
 
             ))}
         </>

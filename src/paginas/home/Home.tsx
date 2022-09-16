@@ -2,7 +2,6 @@
 import React from 'react';
 import './Home.css';
 
-
 function Home() {
     return (
         <>
@@ -16,7 +15,6 @@ function Home() {
             </section>
         </>
     );
-
 }
 
 export default Home;

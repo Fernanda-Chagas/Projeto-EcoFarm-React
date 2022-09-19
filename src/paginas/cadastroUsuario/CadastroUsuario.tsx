@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
-import { Grid, Typography, Button, TextField, Input, Select } from '@material-ui/core';
-import { Box, FormControl, InputLabel } from '@mui/material';
+import { Grid, Typography, Button } from '@material-ui/core';
+import { Box, FormControl, InputLabel, Select, TextField } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import './CadastroUsuario.css';
 import Cadastros from '../../models/Cadastros';
@@ -65,16 +65,16 @@ function CadastroUsuario() {
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
 
-                        <TextField value={cadastros.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth />
-                        <TextField value={cadastros.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' fullWidth />
-                        <TextField value={cadastros.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                        <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='ConfirmarSenha' label='Confirmar Senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
+                        <TextField color='success' value={cadastros.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal' fullWidth  />
+                        <TextField color='success' value={cadastros.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='email' label='E-mail' variant='outlined' name='email' margin='normal' fullWidth />
+                        <TextField color='success' value={cadastros.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                        <TextField color='success' value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='ConfirmarSenha' label='Confirmar Senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
 
                         <FormControl
                             onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             variant='outlined' margin='normal' fullWidth className='tipoUsuario'>
-                            <InputLabel htmlFor='tipo-usuario' className='tipoUsuario'>Tipo de Usuário</InputLabel>
-                            <Select value={cadastros.tipo} native label="Tipo de Usuário" inputProps={{ name: 'tipo', id: 'tipo-usuario', }}>
+                            <InputLabel htmlFor='tipo-usuario' className='tipoUsuario' color='success'>Tipo de Usuário</InputLabel>
+                            <Select value={cadastros.tipo} native label="Tipo de Usuário" inputProps={{ name: 'tipo', id: 'tipo-usuario', }} variant='outlined' color='success'>
                                 <option arial-label="None" value="" />
                                 <option value="CLIENTE">Cliente</option>
                                 <option value="FORNECEDOR">Fornecedor</option>

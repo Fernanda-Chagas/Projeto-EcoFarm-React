@@ -6,8 +6,8 @@ function PopUp() {
 
   return (
 
-    <>
-      <div className='title'><h1> CONHEÇA QUEM ESTÁ POR TRÁS DOECOFARM </h1></div>
+    <div id='founders'>
+      <div className='title'><h1> CONHEÇA QUEM ESTÁ POR TRÁS DO ECOFARM </h1></div>
       <section className='teste2'>
 
         <article className='person'>
@@ -94,7 +94,7 @@ function PopUp() {
           <div className="title">Front-End</div>
         </article>
       </section>
-    </>
+    </div>
   );
 }
 

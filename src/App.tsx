@@ -8,12 +8,13 @@ import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Produtos from './paginas/produtos/Produtos';
 import SobreNos from './paginas/sobreNos/SobreNos';
+import Formulario from './paginas/formulario/Formulario';
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <div style={{ minHeight: '100vh' }}>
+      <div style={{ minHeight: '100vh' }} id='bg-app'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -21,6 +22,7 @@ function App() {
           <Route path="/cadastro" element={<CadastroUsuario />} />
           <Route path="/produtos" element={<Produtos />} />
           <Route path="/sobre" element={<SobreNos />} />
+          <Route path="/contato" element={<Formulario />} />
         </Routes>
       </div>
       <Footer />

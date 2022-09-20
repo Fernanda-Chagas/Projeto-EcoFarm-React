@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div style={{ minHeight: '100vh' }}>
+      <div style={{ minHeight: '100vh' }} id='bg-app'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

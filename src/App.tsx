@@ -7,6 +7,9 @@ import Login from './paginas/login/Login';
 import './App.css';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Produtos from './paginas/produtos/Produtos';
+import SobreNos from './paginas/sobreNos/SobreNos';
+import Formulario from './paginas/formulario/Formulario';
+import Fornecedor from './paginas/fornecedor/Fornecedor';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<CadastroUsuario />} />
           <Route path="/produtos" element={<Produtos />} />
+          <Route path="/sobre" element={<SobreNos />} />
+          <Route path="/contato" element={<Formulario />} />
+          <Route path="/seja-um-fornecedor" element={<Fornecedor />} />
         </Routes>
       </div>
       <Footer />

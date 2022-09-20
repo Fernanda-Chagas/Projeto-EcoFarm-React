@@ -1,12 +1,11 @@
 import React , { useState } from 'react';
-import Navbar from '../../components/estaticos/navbar/Navbar';
 import ListaProdutos from '../../components/listaProdutos/ListaProdutos';
 
 import './Produtos.css';
 
 function Produtos() {
 
-    const [categoriaState, setCategoriaState] = useState('FRUTA');
+    const [categoriaState, setCategoriaState] = useState('TODOS');
     const [ordemState, setOrdemState] = useState('NomeProduto');
 
     const onRadioChangeCategory = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +24,7 @@ function Produtos() {
                         <div>
                             <h2>Categoria</h2>
                             <label htmlFor="todos" className='items'>
-                                    <input type="radio" name="categoria" id='todos' value="" onChange={(e) => onRadioChangeCategory(e)} defaultChecked />
+                                    <input type="radio" name="categoria" id='todos' value="TODOS" onChange={(e) => onRadioChangeCategory(e)} defaultChecked />
                                     Todos
                                 </label>
 
@@ -44,7 +43,7 @@ function Produtos() {
                                     Legumes
                                 </label>
                         </div>
-
+                      
                         <div>
                             <h2>Categoria</h2>
                             <label htmlFor="nome" className='items'>

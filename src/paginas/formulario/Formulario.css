@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.section-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-family:'Open Sans', sans-serif;
+    background-size: 100%;
+    padding-top: 150px;
+}
+
+.section-form article{
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 150px;
+    background-color: #1E8449;
+    padding: 0 15px 0 15px;
+}
+
+.section-form h1{
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.section-form p{
+    color: #fff;
+}
+
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.forms input{
+    width: 700px;
+    height: 45px;
+    margin: 0 0 15px 0;
+    box-sizing: border-box;
+    background-color: #F7FFEC;
+    border-radius: 10px;
+}
+
+.forms textarea{
+    width: 700px;
+    height: 250px;
+    box-sizing: border-box;
+    background-color: #F7FFEC;
+    border-radius: 10px;
+}
+.section-form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-form{
+    width: 30%;
+    height: 30px;
+    margin: 20px 0 25px 0;
+    background-color: #fff !important;
+    color: #1E8449;
+    font-weight: bold;
+}

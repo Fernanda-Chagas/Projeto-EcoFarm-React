@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     background-color: #1E8449;
-    font-size: 10px;
-    color:  #E6B580;
+    font-size: 15px;
+    color:  #fff;
     width: 100%;
 }
 
@@ -12,7 +12,7 @@
     justify-content: center;
     display: flex;
     width: 100%;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 .section-footer{
@@ -31,12 +31,13 @@
     list-style: none;
     display: flex;
     margin-left: -40px;   
-    cursor: pointer; 
+    cursor: pointer;
+    font-size: 15px;
 }
 
 .menu a{
     text-decoration: none;
-    color: #E6B580;
+    color: #fff;
 }
 .menu a:hover{
     font-weight: bold;

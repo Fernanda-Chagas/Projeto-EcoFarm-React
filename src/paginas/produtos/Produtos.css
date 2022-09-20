@@ -1,7 +1,6 @@
 #page_produtos {
     width: 100%;
-    display: flex;
-    background-color: #F7FFEC;
+    display: flex;   
 }
 
 #page_produtos > section:nth-child(1) {

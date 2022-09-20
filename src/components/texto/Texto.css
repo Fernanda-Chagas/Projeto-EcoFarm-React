@@ -1,21 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-/* About */
-#about {
+
+#sobre {
     display:flex;
     flex-direction: column;
+ 
+   
    
 
     justify-content: center;
     align-items: center;
 
     width: 98%;
-    padding: 120px 10px;
+    padding: 90px 10px;
 }
 
-/*  section */
-#about section {
+
+#sobre section {
     display: flex;
     flex-direction: row;
 
@@ -23,7 +25,7 @@
 }
 
 /* img */
-#about section img {
+#sobre section img {
     width: 300px;
     height: auto;
     margin: 0px 5px ;
@@ -32,19 +34,18 @@
 
 
 /* Texto */
-#about section div {
+#sobre section div {
     margin: 0px 5px ;
     font-family:'Open Sans', sans-serif;
 }
 
-#about section div h2 {
+#sobre section div h2 {
     color: #1E8449
 }
 
-.Section1,
-.Section2, 
-.Section3, 
-.Section4{
+.tsx1,
+.tsx2, 
+.tsx3{
     height: 215px;
     margin: 40px 20px 0px 20px;
 }
@@ -53,34 +54,28 @@
     text-align: justify; 
 }
 
-.Section1 p{
+.tsx1 p{
 margin: 5px;
 }
 
-.Section1 h2{
+.tsx1 h2{
     margin-left: 30px;
 }
 
-.Section2 p{
+.tsx2 p{
 margin: 5px;
+padding-right: 300px;
 }
     
-.Section2 h2{
+.tsx2 h2{
     margin: 30px;
 }
 
-.Section3 p{
+.tsx3 p{
     margin: 5px;
 }
         
-.Section3 h2{
+.tsx3 h2{
     margin-left: 30px;
 }
 
-.Section4 p{
-    margin: 5px;
-}
-        
-.Section4 h2{
-    margin-left: 30px;
-}

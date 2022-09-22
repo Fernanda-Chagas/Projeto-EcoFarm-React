@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Estoque from '../../models/Estoque';
 import { busca } from '../../services/Services';
-import './ListaProdutos.css'
+import './ListaProdutos.css';
+import { useCart} from '../../hooks/useCart';
+import useLocalStorage from 'react-use-localstorage';
 
 function ListaProdutos(prop: any) {
     const [produtos, setProdutos] = useState<Estoque[]>([]);
@@ -21,8 +23,11 @@ function ListaProdutos(prop: any) {
 
     }, [produtos.length])
 
-    console.log(prop.categoria);
-    console.log(prop.ordem);
+    const { addProduct } = useCart();
+
+    function handleAddCart(productId: number){
+        addProduct(productId)
+    }
 
     return (
         <>
@@ -38,7 +43,7 @@ function ListaProdutos(prop: any) {
                             <h5 className='mg-top'>{produto.categoria}</h5>
                             <h5 className='mg-top'>Quantidade: {produto.quantidade} Kg</h5>
                             <h2 className='mg-toph2'>R$: {produto.valor}<span id='lr-kg'>  Kg</span></h2>
-                            <button id='btn-comprar'>Comprar</button>
+                            <button id='btn-comprar' onClick={() => handleAddCart(produto.id)}>Comprar</button>
                         </article>
                     </>
                     :
@@ -55,7 +60,7 @@ function ListaProdutos(prop: any) {
                         <h5 className='mg-top'>{produto.categoria}</h5>
                         <h5 className='mg-top'>Quantidade: {produto.quantidade} Kg</h5>
                         <h2 className='mg-toph2'>R$: {produto.valor}<span id='lr-kg'>  Kg</span></h2>
-                        <button id='btn-comprar'>Comprar</button>
+                        <button id='btn-comprar' onClick={() => handleAddCart(produto.id)}>Comprar</button>
                     </article>
                     :
                     ''

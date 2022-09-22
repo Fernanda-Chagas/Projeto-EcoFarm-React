@@ -29,9 +29,9 @@ body {
   padding-top: 200px;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 0px;
-  width: 700px;
-  padding-left: 30px;
+  padding: auto;
 }
 .teste3 {
   padding-top: 200px;

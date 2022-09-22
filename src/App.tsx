@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
@@ -10,10 +10,18 @@ import Produtos from './paginas/produtos/Produtos';
 import SobreNos from './paginas/sobreNos/SobreNos';
 import Formulario from './paginas/formulario/Formulario';
 import Fornecedor from './paginas/fornecedor/Fornecedor';
+import { CartProvider } from './hooks/useCart';
+import {ToastContainer} from 'react-toastify';
 
 function App() {
+  useEffect(() => {
+    document.title = "EcoFarm";
+}, [])
+
   return (
     <Router>
+      <ToastContainer />
+      <CartProvider>
       <Navbar />
       <div style={{ minHeight: '100vh' }} id='bg-app'>
         <Routes>
@@ -27,6 +35,7 @@ function App() {
           <Route path="/seja-um-fornecedor" element={<Fornecedor />} />
         </Routes>
       </div>
+      </CartProvider>
       <Footer />
     </Router>
   );

@@ -51,6 +51,7 @@ function CadastroUsuario() {
         if (confirmarSenha == cadastros.senha) {
             cadastroUsuario(`/api/Usuarios/cadastrar`, cadastros, setCadastrosResult)
             alert('Usuário cadastrado com sucesso!')
+            navigate("/login")
         }
         else {
             alert('Dados inconsistentes. Por favor, verifique as informações do cadastro.')
@@ -58,7 +59,7 @@ function CadastroUsuario() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center' className='fundo'>
+        <Grid container direction='row' justifyContent='center' alignItems='center'>
             <Grid item xs={6} className='img'></Grid>
             <Grid item xs={6} alignItems='center'>
                 <Box paddingX={10}>

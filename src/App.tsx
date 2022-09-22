@@ -12,6 +12,7 @@ import Formulario from './paginas/formulario/Formulario';
 import Fornecedor from './paginas/fornecedor/Fornecedor';
 import { CartProvider } from './hooks/useCart';
 import {ToastContainer} from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css"
 
 function App() {
   useEffect(() => {

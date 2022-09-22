@@ -19,7 +19,7 @@ export default function SideCart() {
 
     function handleProductIncrement(produto: CartItem) {
         const IncrementArguments = {
-            productId: produto.id,
+            idProduto: produto.id,
             amount: produto.quantidade + 1
         }
         updateProductAmount(IncrementArguments)
@@ -27,14 +27,14 @@ export default function SideCart() {
 
     function handleProductDecrement(produto: CartItem) {
         const IncrementArguments = {
-            productId: produto.id,
+            idProduto: produto.id,
             amount: produto.quantidade - 1
         }
         updateProductAmount(IncrementArguments)
     }
 
-    function handleRemoveProduct(productId: number) {
-        removeProduct(productId)
+    function handleRemoveProduct(idProduto: number) {
+        removeProduct(idProduto)
     }
 
     function handleClick() {

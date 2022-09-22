@@ -25,8 +25,8 @@ function ListaProdutos(prop: any) {
 
     const { addProduct } = useCart();
 
-    function handleAddCart(productId: number){
-        addProduct(productId)
+    function handleAddCart(idProduto: number){
+        addProduct(idProduto)
     }
 
     return (

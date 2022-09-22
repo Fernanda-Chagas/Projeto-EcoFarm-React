@@ -9,7 +9,7 @@ interface CartProviderProps {
 }
 
 interface UpdateProductAmount {
-    productId: number;
+    idProduto: number;
     amount: number;
 }
 
@@ -19,9 +19,9 @@ export interface CartItem extends Estoque {
 
 interface CartContextData {
     cart: CartItem[];
-    addProduct: (productId: number) => Promise<void>;
-    removeProduct: (productId: number) => void;
-    updateProductAmount: ({ productId, amount }: UpdateProductAmount) => void;
+    addProduct: (idProduto: number) => Promise<void>;
+    removeProduct: (idProduto: number) => void;
+    updateProductAmount: ({ idProduto, amount }: UpdateProductAmount) => void;
 }
 
 const cartStorageKey = "@ecofarm:cart";
@@ -39,12 +39,12 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         return [];
     });
 
-    const addProduct = async (productId: number) => {
+    const addProduct = async (idProduto: number) => {
         try {
-            const productAlreadyInCart = cart.find(produto => produto.id === productId)
+            const productAlreadyInCart = cart.find(produto => produto.id === idProduto)
 
             if (!productAlreadyInCart) {
-                const { data: produto } = await api.get<Estoque>(`/api/Estoque/id/${productId}`);
+                const { data: produto } = await api.get<Estoque>(`/api/Estoque/id/${idProduto}`);
 
                 if (produto?.quantidade && produto.quantidade > 0) {
                     setCart([...cart, { ...produto, quantidade: 1 }])
@@ -55,10 +55,10 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
             }
 
             if (productAlreadyInCart) {
-                const { data: produto } = await api.get<Estoque>(`/api/Estoque/id/${productId}`);
+                const { data: produto } = await api.get<Estoque>(`/api/Estoque/id/${idProduto}`);
 
                 if (produto?.quantidade && (produto.quantidade > productAlreadyInCart.quantidade)) {
-                    const updatedCart = cart.map(cartItem => cartItem.id === productId ? {
+                    const updatedCart = cart.map(cartItem => cartItem.id === idProduto ? {
                         ...cartItem,
                         quantidade: Number(cartItem.quantidade) + 1
                     } : cartItem)
@@ -75,15 +75,15 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         }
     };
 
-    const removeProduct = (productId: number) => {
+    const removeProduct = (idProduto: number) => {
         try {
-            const productExists = cart.some(cartProduct => cartProduct.id === productId)
+            const productExists = cart.some(cartProduct => cartProduct.id === idProduto)
             if (!productExists) {
                 toast.error('Erro na remoção do produto');
                 return
             }
 
-            const updatedCart = cart.filter(cartItem => cartItem.id !== productId)
+            const updatedCart = cart.filter(cartItem => cartItem.id !== idProduto)
             setCart(updatedCart)
             localStorage.setItem(cartStorageKey, JSON.stringify(updatedCart))
         } catch {
@@ -92,7 +92,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
     };
 
     const updateProductAmount = async ({
-        productId,
+        idProduto,
         amount,
     }: UpdateProductAmount) => {
         try {
@@ -101,7 +101,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
                 return
             }
 
-            const response = await api.get<Estoque>(`/api/Estoque/id/${productId}`);
+            const response = await api.get<Estoque>(`/api/Estoque/id/${idProduto}`);
 
             const productAmount = response.data?.quantidade ?? 0;
             const stockIsFree = amount > productAmount
@@ -111,13 +111,13 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
                 return
             }
 
-            const productExists = cart.some(cartProduct => cartProduct.id === productId)
+            const productExists = cart.some(cartProduct => cartProduct.id === idProduto)
             if (!productExists) {
                 toast.error('Erro na alteração de quantidade do produto');
                 return
             }
 
-            const updatedCart = cart.map(cartItem => cartItem.id === productId ? {
+            const updatedCart = cart.map(cartItem => cartItem.id === idProduto ? {
                 ...cartItem,
                 quantidade: amount
             } : cartItem)

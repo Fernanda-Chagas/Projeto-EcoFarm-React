@@ -8,7 +8,7 @@ function Fornecedor() {
     return (
         <main className='body-m'>
             <section className='section-s'>
-                <h1 className='title'>Seja um fornecedor</h1>
+                <div className='title-f'>Seja um fornecedor</div>
                 <p>Insira os dados abaixo e nós entraremos em contato !</p>
                 <form action='https://formspree.io/f/myyveodn' method='post' className='form'>
                     <input type="email" placeholder="Email" name='Email' />

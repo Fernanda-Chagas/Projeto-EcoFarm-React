@@ -4,6 +4,7 @@ import { CartItem, useCart } from '../../hooks/useCart';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import DeleteIcon from '@material-ui/icons/Delete';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
@@ -137,7 +138,8 @@ export default function SideCart() {
         <div>
             {(['right'] as Anchor[]).map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}>
+                     <Button onClick={toggleDrawer(anchor, true)}className='list-n'>
+                    <AddShoppingCartIcon />
                     </Button>
                     <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
                         {list(anchor)}

@@ -51,7 +51,7 @@ function PopUp() {
                 src="https://cdn.discordapp.com/attachments/1011758755010068545/1019729143534985226/Fundo_Virtual_Para_Zoom_Decorativo_Rosa_Pastel_Verde-escuro_1.png" />
               <img
                 className="img-g img3"
-                src="https://cdn.discordapp.com/attachments/1011758755010068545/1019731402637459456/WhatsApp_Image_2022-09-14_at_19.05.21.png" />
+                src="https://cdn.discordapp.com/attachments/1011758755010068545/1019730005883879515/248281688_1697093373977466_4981100254651555069_n.png" />
             </div>
           </div>
           <div className="divider"></div>

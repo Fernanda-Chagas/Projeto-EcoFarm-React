@@ -44,18 +44,7 @@ function Produtos() {
                                 </label>
                         </div>
                       
-                        <div>
-                            <h2>Ordem</h2>
-                            <label htmlFor="nome" className='items'>
-                                <input type="radio" name="ordem" id='nome' value="NomeProduto" onChange={(e) => onRadioChangeOrder(e)} defaultChecked />
-                                Nome
-                            </label>
-                            
-                            <label htmlFor="valor" className='items'>
-                                <input type="radio" name="ordem" id='valor' value="Valor" onChange={(e) => onRadioChangeOrder(e)} />
-                                Valor
-                            </label>
-                        </div>
+                       
                     </section>
 
                     <section>

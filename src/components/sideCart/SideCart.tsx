@@ -138,7 +138,7 @@ export default function SideCart() {
         <div>
             {(['right'] as Anchor[]).map((anchor) => (
                 <React.Fragment key={anchor}>
-                     <Button onClick={toggleDrawer(anchor, true)}className='list-n'>
+                     <Button onClick={toggleDrawer(anchor, true)}className='test4'>
                     <AddShoppingCartIcon />
                     </Button>
                     <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>

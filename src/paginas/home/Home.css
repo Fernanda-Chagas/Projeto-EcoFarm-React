@@ -64,6 +64,13 @@
     z-index: 1;
 }
 
+.slider-item{
+    max-height: 400px;
+    width: fit-content;
+    object-fit: cover;
+    width: 100%;
+}
+
 @keyframes carousel {
     0%{transform: translateX(0%);}
     25%{transform: translateX(-100%);}

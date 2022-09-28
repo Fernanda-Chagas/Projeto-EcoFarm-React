@@ -1,35 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
-.body {
-    margin-top: 100px;
+.body-m {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
-.title {
-    padding-top: 20px;
-    font-size: 30px;
-
+.title-f {
+    padding-top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1E8449;
 }
 
-.section {
-    box-sizing: border-box;
+.section-s {
     border-radius: 10px;
-    margin: 150px;
     padding: 0 15px 0 15px;
-    box-sizing: border-box;
-    margin: 150px;
+    box-sizing: border-box;    
 }
 
-.section form {
+.section-s form {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 50px;
 }
 
-.section form input {
+.section-s form input {
     margin: 20px;
     width: 600px;
     height: 50px;
@@ -38,17 +35,17 @@
     border-style: inset;
 }
 
-.section form textarea {
+.section-s form textarea {
     margin: 20px;
     width: 600px;
-    height: 90px;
+    height: 150px;
     padding-left: 30px;
     font-size: 14px;
     margin-top: 15px;
     border-style: inset;
 }
 
-.section form button {
+.section-s form button {
     display: inline-block;
     padding: 10px 30px;
     font-size: 20px;

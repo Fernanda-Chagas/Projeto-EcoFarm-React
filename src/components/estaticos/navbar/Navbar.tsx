@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import LogoutIcon from '@mui/icons-material/Logout';
 import './Navbar.css'
+import SideCart from '../../sideCart/SideCart';
 
 function Navbar() {
 
@@ -25,7 +26,7 @@ function Navbar() {
                     <section>
                         <article>
                             <ul className='list-n'>
-                                <li><a href='#'><AddShoppingCartIcon /></a></li>
+                                <li> <SideCart /> </li>
                                 <li> <Link to='/login' className='link' ><LogoutIcon /></Link> </li>
                             </ul>
                         </article>

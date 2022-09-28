@@ -10,7 +10,7 @@ function Home() {
             <section className='slider'>
                 <div className='slider-content'>
                     <img className="slider-item" src="https://images.pexels.com/photos/70746/strawberries-red-fruit-royalty-free-70746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Morango" />
-                    <img className="slider-item" src="https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Banana" />
+                    <img className="slider-item" src="https://images.pexels.com/photos/1486976/pexels-photo-1486976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Banana" />
                     <img className="slider-item" src="https://images.pexels.com/photos/693794/pexels-photo-693794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maça Verde" />
                     <img className="slider-item" src="https://images.pexels.com/photos/266346/pexels-photo-266346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Limão" />
                 </div>
@@ -38,42 +38,42 @@ function Home() {
                 </Box>
             </Grid>
             <Grid container alignItems='center' justifyContent='center' className="gridContainer2">
-            <Grid item className="gridImage">
-                <Grid item  xs={3}>
-                    <Box className="image">
-                        <a href="/sobre">
-                            <img className="image__img" src="https://cdn.discordapp.com/attachments/1011758755010068545/1024413932527558716/unknown.png" alt="Haja" />
-                            <div className="image__overlay image__overlay--blur" >
-                                <p>HAJA</p>
-                            </div>
-                        </a>
-                    </Box>
-                </Grid>
+                <Grid item className="gridImage">
+                    <Grid item xs={3}>
+                        <Box className="image">
+                            <a href="/sobre">
+                                <img className="image__img" src="https://cdn.discordapp.com/attachments/1011758755010068545/1024413932527558716/unknown.png" alt="Haja" />
+                                <div className="image__overlay image__overlay--blur" >
+                                    <p>HAJA</p>
+                                </div>
+                            </a>
+                        </Box>
+                    </Grid>
 
 
-                <Grid item  xs={3}>
-                    <Box className="image">
-                        <a href="/sobre">
-                            <img className="image__img" src="https://cdn.discordapp.com/attachments/1011758755010068545/1024415469177937990/unknown.png" alt="Amigos do Bem" />
-                            <div className="image__overlay image__overlay--blur">
-                                <p>Amigos do bem</p>
-                            </div>
-                        </a>
-                    </Box>
-                </Grid>
+                    <Grid item xs={3}>
+                        <Box className="image">
+                            <a href="/sobre">
+                                <img className="image__img" src="https://cdn.discordapp.com/attachments/1011758755010068545/1024415469177937990/unknown.png" alt="Amigos do Bem" />
+                                <div className="image__overlay image__overlay--blur">
+                                    <p>Amigos do bem</p>
+                                </div>
+                            </a>
+                        </Box>
+                    </Grid>
 
-                <Grid item  xs={3}>
-                    <Box className="image">
-                        <a href="/sobre">
-                            <img className="image__img" src="https://cdn.discordapp.com/attachments/1011758755010068545/1024415505316053012/unknown.png" alt="Progen" />
-                            <div className="image__overlay image__overlay--blur">
-                                <p> Progen </p>
-                            </div>
-                        </a>
-                    </Box>
+                    <Grid item xs={3}>
+                        <Box className="image">
+                            <a href="/sobre">
+                                <img className="image__img" src="https://cdn.discordapp.com/attachments/1011758755010068545/1024415505316053012/unknown.png" alt="Progen" />
+                                <div className="image__overlay image__overlay--blur">
+                                    <p> Progen </p>
+                                </div>
+                            </a>
+                        </Box>
+                    </Grid>
                 </Grid>
             </Grid>
-         </Grid>
 
             <Grid container alignItems='center' justifyContent='center' className="gridContainer3">
                 <Box className="title">
@@ -111,7 +111,6 @@ function Home() {
                                     <p>Legumes</p>
                                 </div>
                             </a>
-
                         </Box>
                     </Grid>
                 </Grid>

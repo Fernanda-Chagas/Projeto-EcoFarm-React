@@ -6,11 +6,12 @@ function PopUp() {
 
   return (
 
-    <div id='founders'>
-      <div className='title'><h1> CONHEÇA QUEM ESTÁ POR TRÁS DO ECOFARM </h1></div>
-      <section className='teste2'>
+    <div id="founders">
 
-        <article className='person'>
+      <div className='title'><h1> CONHEÇA QUEM ESTÁ POR TRÁS DO <span> ECOFARM </span> </h1></div>
+      <div className='teste2'>
+
+        <div className='person'>
           <div className="container">
             <div className="container-inner">
               <img
@@ -26,9 +27,8 @@ function PopUp() {
           <div className="divider"></div>
           <div className="name">Reynald Albuquerque</div>
           <div className="title">Back-End</div>
-        </article>
-
-        <article className="person">
+        </div>
+        <div className="person">
           <div className="container">
             <div className="container-inner">
               <img
@@ -42,9 +42,8 @@ function PopUp() {
           <div className="divider"></div>
           <div className="name">Jonathan Queiroz</div>
           <div className="title">Back-End</div>
-        </article>
-        
-        <article className="person">
+        </div>
+        <div className="person">
           <div className="container">
             <div className="container-inner">
               <img
@@ -52,17 +51,16 @@ function PopUp() {
                 src="https://cdn.discordapp.com/attachments/1011758755010068545/1019729143534985226/Fundo_Virtual_Para_Zoom_Decorativo_Rosa_Pastel_Verde-escuro_1.png" />
               <img
                 className="img-g img3"
-                src="https://cdn.discordapp.com/attachments/1011758755010068545/1019731402637459456/WhatsApp_Image_2022-09-14_at_19.05.21.png" />
+                src="https://cdn.discordapp.com/attachments/1011758755010068545/1019730005883879515/248281688_1697093373977466_4981100254651555069_n.png" />
             </div>
           </div>
           <div className="divider"></div>
           <div className="name">Fernanda Chagas</div>
           <div className="title">Front-End</div>
-        </article>
-      </section>
+        </div>
 
-      <section className='teste3'>
-        <article className="person">
+
+        <div className="person">
           <div className="container">
             <div className="container-inner">
               <img
@@ -74,11 +72,10 @@ function PopUp() {
             </div>
           </div>
           <div className="divider"></div>
-          <div className="name">Israel <br /> Felipe</div>
+          <div className="name">Israel <br></br> Felipe </div>
           <div className="title">Front-End</div>
-        </article>
-
-        <article className="person">
+        </div>
+        <div className="person">
           <div className="container">
             <div className="container-inner">
               <img
@@ -90,10 +87,10 @@ function PopUp() {
             </div>
           </div>
           <div className="divider"></div>
-          <div className="name">Samara Pereira </div>
+          <div className="name">Samara <br></br> Pereira </div>
           <div className="title">Front-End</div>
-        </article>
-      </section>
+        </div>
+      </div>
     </div>
   );
 }

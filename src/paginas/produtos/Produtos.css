@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #F7FFEC;
 }
 
 #page_produtos > section:nth-child(2) {
